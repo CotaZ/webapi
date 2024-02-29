@@ -8,7 +8,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IHelloWorldService, HelloworldService>();
+//builder.Services.AddScoped<IHelloWorldService, HelloworldService>();// No se puede pasar parametros.
+builder.Services.AddScoped<IHelloWorldService>(p=> new HelloworldService()); // En esta funcioón se puede pasar paramentros.
+
 
 var app = builder.Build();
 
