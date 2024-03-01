@@ -45,12 +45,18 @@ namespace webapi.Services
                 await context.SaveChangesAsync();
             }
         }
+
+        public Task Delete(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
     }
     public interface ITareasService
     {
         IEnumerable<Tarea> Get();       
         Task Save(Tarea tarea);
         Task Update(Guid id, Tarea tarea);
-        Task Delete(Guid id, Tarea tarea);  
+        Task Delete(Guid id);  
     }
 }

@@ -10,7 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //builder.Services.AddScoped<IHelloWorldService, HelloworldService>();// No se puede pasar parametros.
 builder.Services.AddScoped<IHelloWorldService>(p=> new HelloworldService()); // En esta funcioón se puede pasar paramentros.
-
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<TareasService, TareasService>();
 
 var app = builder.Build();
 

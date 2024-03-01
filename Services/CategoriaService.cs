@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using webapi;
+using Microsoft.AspNetCore.Mvc;
 using webapi.Models;
 
 namespace webapi.Services;
@@ -46,12 +47,16 @@ public class CategoriaService : ICategoriaService
             await context.SaveChangesAsync();
         }
     }
+
+    public Task Delete(Guid id)
+    {
+        throw new NotImplementedException();
+    }
 }
 public interface ICategoriaService
 {
     IEnumerable<Categoria> Get();
     Task Save(Categoria categoria);
     Task Update(Guid id, Categoria categoria);
-    Task Delete(Guid id, Categoria categoria);
-
+    Task Delete(Guid id);
 }
