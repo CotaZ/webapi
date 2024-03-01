@@ -15,7 +15,7 @@ builder.Services.AddScoped<IHelloWorldService>(p=> new HelloworldService()); // 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())//Este metodo es inseguro por los Hackers
 {
     app.UseSwagger();
     app.UseSwaggerUI();

@@ -1,22 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
 using webapi.Services;
 
-namespace webapi.Controllers;
+namespace mywebapi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+public class HelloWorldController : ControllerBase{
 
-public class HelloWorldController: ControllerBase
-{
     IHelloWorldService helloWorldService;
-
-    public HelloWorldController(IHelloWorldService helloWorld)
+    private readonly ILogger<HelloWorldController> _logger;
+    public HelloWorldController(ILogger<HelloWorldController> logger,IHelloWorldService helloworld)
     {
-        helloWorldService = helloWorld;
+        _logger = logger;
+        helloWorldService = helloworld;
     }
-
+    [HttpGet]
     public IActionResult Get()
     {
-        return Ok(helloWorldService.GetHelloWorld());
+        _logger.LogInformation("Saludando el mundo de los devops");
+        return Ok(helloWorldService.GetHelloWorld()); 
     }
 }
