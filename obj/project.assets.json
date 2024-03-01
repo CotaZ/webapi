@@ -3184,11 +3184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lalvareg\\Desktop\\webapi\\webapi.csproj",
+      "projectUniqueName": "c:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Users\\lalvareg\\Desktop\\webapi\\webapi.csproj",
+      "projectPath": "c:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\webapi.csproj",
       "packagesPath": "C:\\Users\\lalvareg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lalvareg\\Desktop\\webapi\\obj\\",
+      "outputPath": "c:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
