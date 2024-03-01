@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lalvareg\\Desktop\\webapi\\webapi.csproj": {}
+    "C:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lalvareg\\Desktop\\webapi\\webapi.csproj": {
+    "C:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lalvareg\\Desktop\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\lalvareg\\Desktop\\webapi\\webapi.csproj",
+        "projectPath": "C:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\webapi.csproj",
         "packagesPath": "C:\\Users\\lalvareg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lalvareg\\Desktop\\webapi\\obj\\",
+        "outputPath": "C:\\Users\\lalvareg\\Desktop\\webapi.worktrees\\FinalMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -48,6 +48,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
